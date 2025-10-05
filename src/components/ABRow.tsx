@@ -1,0 +1,4 @@
+import { ABQuestion } from '@utils/types'
+export default function ABRow({ q, value, onChange }:{q:ABQuestion; value?:number; onChange:(v:number)=>void}){
+  return (<div className="py-3 border-b last:border-none"><div className="mb-2 font-medium text-slate-800">{q.prompt}</div><div className="grid gap-2" role="radiogroup" aria-label={q.prompt}><label className="inline-flex items-center gap-2 cursor-pointer"><input type="radio" name={q.id} value={0} checked={value===0} onChange={()=>onChange(0)} className="h-4 w-4"/><span className="text-sm">A. {q.a}</span></label><label className="inline-flex items-center gap-2 cursor-pointer"><input type="radio" name={q.id} value={1} checked={value===1} onChange={()=>onChange(1)} className="h-4 w-4"/><span className="text-sm">B. {q.b}</span></label></div></div>)
+}

@@ -1,0 +1,1 @@
+export default function ProgressBadge({answered,total}:{answered:number;total:number}){return(<span className='inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700'><span className='h-2 w-2 rounded-full bg-emerald-500'></span>{answered}/{total} answered</span>)}

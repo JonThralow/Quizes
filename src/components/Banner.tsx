@@ -1,0 +1,1 @@
+export default function Banner(){return(<div className='w-full bg-indigo-50 border-b border-indigo-100'><div className='mx-auto max-w-5xl px-4 py-3 text-sm text-indigo-900'><strong>Disclaimer:</strong> Educational use only — <span className='font-medium'>not</span> a clinical diagnosis.</div></div>)}
